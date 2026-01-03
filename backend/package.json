@@ -1,0 +1,28 @@
+{
+  "name": "dayflow-backend",
+  "version": "0.1.0",
+  "description": "Dayflow HRMS - Backend API Server",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js",
+    "migrate": "node src/config/migrate.js",
+    "seed": "node src/config/seed.js"
+  },
+  "keywords": ["hrms", "nodejs", "express", "postgresql"],
+  "author": "Dayflow Team",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-validator": "^7.0.1",
+    "jsonwebtoken": "^9.0.2",
+    "pg": "^8.11.3",
+    "pg-hstore": "^2.3.4"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}
